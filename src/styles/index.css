@@ -1,11 +1,82 @@
-/* 
+.todo-container {
+    max-width: 500px;
+    background: white;
+    box-shadow: 
+        0 2px 4px 0 rgba(0, 0, 0, 0.2), 
+        0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-input{
+    padding: 15px 50px;
+    border: none;
+    border-bottom: 1px solid #ededed;
+    font-size: 24px;
+    list-style: none;
+    text-align: left;
+}
 
-*/
+.todo-input:focus {
+    outline: none;
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ededed;
+    background: white;
+    min-height: 60px;
+}
+
+.delete-btn {
+    display: none; 
+    margin: 0 20px;
+    color: #af2f2f;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: color 0.2s;
+}
+
+.todo-item:hover .delete-btn {
+    display: block;
+}
+
+.delete-btn:hover {
+    color: #891b1b;
+    
+}
+
+.sheet-1, .sheet-2 {
+    height: 5px;
+    background: white;
+    border: 1px solid #ededed;
+    margin: 0 auto;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.sheet-1 { max-width: 500px; }
+.sheet-2 { max-width: 490px; }
+
+h1 {
+    font-size: 100px;
+    font-weight: 200;
+    color: rgba(175, 47, 47, 0.15);
+}
+
+ul{
+    list-style-type: none; 
+    margin: 0;           
+}
+
+li{
+    margin: 10px;
+    border-bottom: 1px solid #ededed;
+}
+
+
+
